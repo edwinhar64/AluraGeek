@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AluraGeek</h1>
+    </header>
+    
+    <div class="container">
+        <div class="products">
+            <div class="product-box" id="imagen1">
+                <img src="img/stormtrooper.jpg" alt="Stormtrooper">
+                <p>Producto llamado Stormtrooper</p>
+                <div class="price-container">
+                    <p>$ 60,00</p>
+                    <button class="delete-button" onclick="FEliminar()"><img src="img/trash-icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+            <div class="product-box" id="imagen2">
+                <img src="img/gameboy.jpg" alt="Game Boy Classic">
+                <p>Producto llamado Game Boy Classic</p>
+                <div class="price-container">
+                    <p>$ 60,00</p>
+                    <button class="delete-button" onclick="FEliminar()"><img src="img/trash-icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+            <div class="product-box" id="imagen3">
+                <img src="img/stormtrooper.jpg" alt="Stormtrooper">
+                <p>Producto llamado Stormtrooper</p>
+                <div class="price-container">
+                    <p>$ 60,00</p>
+                    <button class="delete-button" onclick="FEliminar()"><img src="img/trash-icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+            <div class="product-box" id="imagen4">
+                <img src="img/gameboy.jpg" alt="Game Boy Classic">
+                <p>Producto llamado Game Boy Classic</p>
+                <div class="price-container">
+                    <p>$ 60,00</p>
+                    <button class="delete-button" onclick="FEliminar()"><img src="img/trash-icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+            <div class="product-box" id="imagen5">
+                <img src="img/stormtrooper.jpg" alt="Stormtrooper">
+                <p>Producto llamado Stormtrooper</p>
+                <div class="price-container">
+                    <p>$ 60,00</p>
+                    <button class="delete-button" onclick="FEliminar()"><img src="img/trash-icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+            <div class="product-box" id="imagen6">
+                <img src="img/gameboy.jpg" alt="Game Boy Classic">
+                <p>Producto llamado Game Boy Classic</p>
+                <div class="price-container">
+                    <p>$ 60,00</p>
+                    <button class="delete-button" onclick="FEliminar()"><img src="img/trash-icon.png" alt="Eliminar"></button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="add-product">
+            <p>Agregar Producto</p>
+            <input type="text" placeholder="nombre..." class="input1">
+            <input type="text" placeholder="imagen..." class="input2">
+            <input type="text" placeholder="precio..." class="input3">
+            <button onclick="enviar()">Enviar</button>
+            <button onclick="FLimpiar()">Limpiar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desarrollado por [Edwin Alfaro Romaña]</p>
+        <p>ALURA LATAM - 2024X</p>
+    </footer>
+</body>
+</html>

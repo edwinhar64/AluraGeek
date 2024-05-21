@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header, footer {
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.container {
+    display: flex;
+    padding: 20px;
+}
+.products, .add-product {
+    flex: 1;
+    margin: 10px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box {
+    width: 30%;
+    background-color: #5D04D9;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #5D04D9;
+    border-radius: 10px;
+    color: white; /* Cambiando el color del texto a blanco */
+}
+
+.product-box img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #5D04D9;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.price-container p {
+    margin: 0;
+    color: #800080;
+    font-size: 1.2em;
+    color: white; /* Cambiando el color del texto a blanco */
+}
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 10px;
+}
+.delete-button img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.add-product {
+    text-align: center;
+}
+.add-product input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.add-product button {
+    width: 40%;
+    padding: 10px;
+    margin: 10px 5%;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007BFF;
+    cursor: pointer;
+}
+.add-product button:nth-child(2) {
+    background-color: #FF5733;
+}
+
+/* Media query for mobile view */
+@media (max-width: 830px) {
+    .container {
+        flex-direction: column;
+    }
+    .add-product {
+        order: -1;
+        width: 100%;
+    }
+    .products {
+        width: 100%;
+    }
+    .product-box {
+        width: 100%;
+    }
+}
